@@ -1,0 +1,105 @@
+Download Season 1 of Rick and Morty
+https://www.youtube.com/watch?v=AEXvvG8zI1o
+****How to append in numpy regardless of dimentions****
+1342 images in label 2
+fundamental group of torus and sphere
+pubsub
+
+
+
+
+ffmpeg_class:
+*get rid hint annotations
+*Fix Global variable definision to deal with addition
+*create a directory for the output of each seperate video in FfmpegBulk
+
+
+    Create a class of ffmpeg:
+    -make addition combine two videos{}
+    -get all pictures from a video{}
+    -change video type from one to another{}
+    -splice{}
+
+    Create a class of ffmpeg_bulk:
+    -Get Video pictures from all videos{}
+    -create a definition that removes all non video files
+    -change all video types to one type
+    -remove a part of the video that's not wanted (usually the first 30 secs) {}
+
+labeling_data:
+    -look at picture {}
+    -label 1,2,3,4,5,6,7,8,9,10 {}
+    -put in appropriate foldern {}
+    -Labels can be made from each number by c = waitkey {}
+
+data_manipulate:
+    -learn how to import my own module I forgot{}
+    -create videos removing the intro sequence{}
+    -take screenshots{}
+    -label the data{}
+
+    -transform data to lower pixel count{}
+    -divide data into training an Test batches
+    -Normalize data, figure out how to do this for rgb data values
+    -np.expand
+
+Neural network:
+    -change the parameters
+    -fuck around with it until it predicts data correctly
+    .....
+
+Learn.?
+hidden markob model, decision trees
+
+
+
+Stuff I Might need later:
+
+ ############################################################################################
+   #save_images_as_array("Labels/Label 3", "useless.p")
+    image_array = pickle.load(open("image_array_Label_2.p", "rb"))
+    image_array1 = pickle.load(open("image_array_Label_1.p", "rb"))
+
+    print(image_array.shape)
+    value_dict = {}
+    value_dict1 = {}
+    for i in image_array:
+        value_dict[str(i)] = 3
+
+    for i in image_array1:
+        value_dict[str(i)] = 1
+
+    value_dict1.update(value_dict)
+    new_dict = value_dict1
+
+
+    a = str(image_array[0])
+    print(a)
+    print(new_dict[a])
+
+    pickle.dump(new_dict, open("label_dict.p", 'wb'))
+    #############################################################################################
+    images1 = pickle.load(open("image_array_Label_1.p", "rb"))
+    images2 = pickle.load(open("image_array_Label_2.p", "rb"))
+    dict_test = pickle.load(open("label_dict.p", "rb"))
+
+
+    a = str(images1[0])
+
+    print(dict_test[a])
+######################################################################################################
+
+resize  {}
+pickle array Label 1, Label 2 {}
+Label 1 size = Label 2 size
+create dictionary label 1, label2
+combine dictionaries
+combine Label 1 and label 2 (equal size)
+randomize
+create label array
+
+Excel
+A/B text
+SQL
+Pandas
+tableau
